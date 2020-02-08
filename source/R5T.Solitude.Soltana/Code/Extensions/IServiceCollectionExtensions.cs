@@ -3,6 +3,7 @@
 using Microsoft.Extensions.DependencyInjection;
 
 using R5T.Dacia;
+using R5T.Solutas;
 
 using InMemorySolutionFileOperator = R5T.Soltana.IVisualStudioSolutionFileOperator;
 
@@ -16,7 +17,7 @@ namespace R5T.Solitude.Soltana
         /// </summary>
         public static IServiceCollection AddSoltanaVisualStudioSolutionFileOperator(this IServiceCollection services,
             ServiceAction<InMemorySolutionFileOperator> addInMemorySolutionFileOperator,
-            ServiceAction<IVisualStudioSolutionFileOperator> addSolutionFileSerializer)
+            ServiceAction<IVisualStudioSolutionFileSerializer> addSolutionFileSerializer)
         {
             services
                 .AddSingleton<IVisualStudioSolutionFileOperator, VisualStudioSolutionFileOperator>()
@@ -32,7 +33,7 @@ namespace R5T.Solitude.Soltana
         /// </summary>
         public static ServiceAction<IVisualStudioSolutionFileOperator> AddSoltanaVisualStudioSolutionFileOperatorAction(this IServiceCollection services,
             ServiceAction<InMemorySolutionFileOperator> addInMemorySolutionFileOperator,
-            ServiceAction<IVisualStudioSolutionFileOperator> addSolutionFileSerializer)
+            ServiceAction<IVisualStudioSolutionFileSerializer> addSolutionFileSerializer)
         {
             var serviceAction = new ServiceAction<IVisualStudioSolutionFileOperator>(() => services.AddSoltanaVisualStudioSolutionFileOperator(
                 addInMemorySolutionFileOperator,

@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Solitude.Soltana.Constr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Solitude.Soltana.Testing", "R5T.Solitude.Soltana.Testing\R5T.Solitude.Soltana.Testing.csproj", "{3DEF3882-FDC5-4D0C-94DA-01C255CBD5D7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Dependencies", "_Dependencies", "{470713D1-B259-4705-AAA0-C15E609F499C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.T0064", "..\..\R5T.T0064\source\R5T.T0064\R5T.T0064.csproj", "{AFCC34CE-F7F9-4CEE-A600-20E82B1C13FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +62,20 @@ Global
 		{3DEF3882-FDC5-4D0C-94DA-01C255CBD5D7}.Release|x64.Build.0 = Release|Any CPU
 		{3DEF3882-FDC5-4D0C-94DA-01C255CBD5D7}.Release|x86.ActiveCfg = Release|Any CPU
 		{3DEF3882-FDC5-4D0C-94DA-01C255CBD5D7}.Release|x86.Build.0 = Release|Any CPU
+		{AFCC34CE-F7F9-4CEE-A600-20E82B1C13FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFCC34CE-F7F9-4CEE-A600-20E82B1C13FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFCC34CE-F7F9-4CEE-A600-20E82B1C13FF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AFCC34CE-F7F9-4CEE-A600-20E82B1C13FF}.Debug|x64.Build.0 = Debug|Any CPU
+		{AFCC34CE-F7F9-4CEE-A600-20E82B1C13FF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AFCC34CE-F7F9-4CEE-A600-20E82B1C13FF}.Debug|x86.Build.0 = Debug|Any CPU
+		{AFCC34CE-F7F9-4CEE-A600-20E82B1C13FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFCC34CE-F7F9-4CEE-A600-20E82B1C13FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFCC34CE-F7F9-4CEE-A600-20E82B1C13FF}.Release|x64.ActiveCfg = Release|Any CPU
+		{AFCC34CE-F7F9-4CEE-A600-20E82B1C13FF}.Release|x64.Build.0 = Release|Any CPU
+		{AFCC34CE-F7F9-4CEE-A600-20E82B1C13FF}.Release|x86.ActiveCfg = Release|Any CPU
+		{AFCC34CE-F7F9-4CEE-A600-20E82B1C13FF}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AFCC34CE-F7F9-4CEE-A600-20E82B1C13FF} = {470713D1-B259-4705-AAA0-C15E609F499C}
 	EndGlobalSection
 EndGlobal

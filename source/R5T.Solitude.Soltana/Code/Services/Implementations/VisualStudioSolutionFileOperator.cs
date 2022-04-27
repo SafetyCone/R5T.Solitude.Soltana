@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -6,12 +6,12 @@ using R5T.Cambridge.Types;
 using R5T.Soltana.Extensions;
 using R5T.Solutas;
 
-using InMemorySolutionFileOperator = R5T.Soltana.IVisualStudioSolutionFileOperator;
+using InMemorySolutionFileOperator = R5T.Soltana.IVisualStudioSolutionFileOperator;using R5T.T0064;
 
 
 namespace R5T.Solitude.Soltana
-{
-    public class VisualStudioSolutionFileOperator : IVisualStudioSolutionFileOperator
+{[ServiceImplementationMarker]
+    public class VisualStudioSolutionFileOperator : IVisualStudioSolutionFileOperator,IServiceImplementation
     {
         private InMemorySolutionFileOperator InMemorySolutionFileOperator { get; }
         private IVisualStudioSolutionFileSerializer VisualStudioSolutionFileSerializer { get; }
